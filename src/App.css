@@ -36,3 +36,129 @@
     transform: rotate(360deg);
   }
 }
+
+body {
+  background: url("../public/nicebg.jpg");
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+
+
+body::-webkit-scrollbar {
+  width: 1px;
+}
+
+body, html {
+  overflow-x: hidden; /* Hide horizontal scroll */
+}
+
+body {
+  overflow-y: auto; /* Enable vertical scroll */
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: transparent;
+}
+
+@media (max-width: 767px) {
+  body {
+    background-image: url("../public/bg-phone.jpg");
+    background-size: cover;
+  }
+
+  .sidebar {
+    background-color: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+  }
+
+  .sidebar2{
+    background-color: whitesmoke;
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+  }
+
+  .logoHead{
+    display: none;
+  }
+}
+
+.heading{
+  font-family: 'Onest', sans-serif;
+}
+
+.navbar-nav .nav-link {
+  font-weight: bold;
+}
+
+
+.sidebar2{
+  color: black;
+  background-color: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+}
+
+/* Add drop shadow to navbar items on hover */
+.navbar-nav .nav-link:hover {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Add drop shadow to buttons on hover */
+.btn:hover {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transform: scale(1.1); /* Enlarge the button on hover */
+}
+
+
+
+.logoHead{
+  margin-right: 450px;
+  margin-top: -10px;
+}
+
+.logoHead img {
+  transition: transform 0.5s ease; /* Add a smooth transition effect */
+}
+
+.logoHead img:hover {
+  transform: rotate(360deg); /* Apply the 180-degree rotation on hover */
+}
+
+.intro{
+  background-color: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border-radius: 30px;
+}
+
+.custom-bg-color{
+  background-color: #6c6175;
+}
+
+.btn {
+  transition: background-color 0.3s ease, color 0.3s ease, transform 0.3s ease;
+}
+
+.bt1:hover {
+  background-color: #6c6175;
+  color: #fff;
+  transform: scale(1.1);
+}
+
+.img-fluid {
+  transition: transform 0.3s ease;
+}
+
+.img-fluid:hover {
+  transform: scale(1.1);
+}
+
+.bt2:hover {
+  background-color: #6c6175;
+  color: #fff;
+  transform: scale(1.1);
+}
